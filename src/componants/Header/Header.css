@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 30px;
+  }
+
+
+.link, a {
+  text-decoration: none;
+}
+
+.header-nav {
+  padding-top: 30px;
+  margin-left:10px;
+}
+
+.link {
+  padding-left: 10px;
+}
+
+.header-logo {
+  display: flex;
+  color: #5F5671;
+  font-size: 10px;
+  margin: 5px;
+}
+
+img{
+  height: 60px;
+  width: 60px;
+}
+
+.active {
+  color : #00AEA5;
+}

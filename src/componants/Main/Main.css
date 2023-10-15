@@ -1,0 +1,51 @@
+.Main {
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+}
+
+.Main-left {
+    width: 50%;
+}
+
+.Main h1 {
+    color: #5F5671;
+    font-size: 30px;
+}
+
+.Main h2 {
+    color: #00AEA5;
+    font-size: 20px;
+}
+
+.Main-curseur {
+    width: 15px;
+    height: 15px;
+}
+
+.Main button {
+    font-size: 15px;
+    background-color: transparent;
+    color: #5F5671;
+    padding: 5px;
+    padding-right: 10px;
+}
+
+.Main button:hover {
+    font-size: 15px;
+    background-color: #5F5671;
+    color: white;
+    border-radius: 10px;
+}
+
+.Main-right {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background: rgba(95, 86, 113, 0.5);
+}
+
+.Main-right h1 {
+    font-size: 20px;
+    color:white;
+}
