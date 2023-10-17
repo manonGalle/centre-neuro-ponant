@@ -49,3 +49,44 @@
     font-size: 20px;
     color:white;
 }
+
+.Main-details img {
+    width: 300px;
+    height: 300px;
+    padding-top: 40px;
+}
+
+.Main-paragraphe {
+    display: flex;
+    margin: 20px;
+}
+
+.Main-paragraphe h3 {
+    color: #00AEA5;
+    font-size: 10px;
+}
+
+.Main-paragraphe h1 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.Main-paragraphe p{
+    font-size: 11px;
+}
+
+.Main-paragraphe button {
+    padding: 5px;
+    background-color: transparent;
+    border: 0.5px solid black;
+    color: #00AEA5;
+}
+
+.Main-paragraphe button :hover {
+    background-color:#00AEA5;
+    color: black;
+}
+
+.Main-details-left {
+    padding-right: 10px;
+}
