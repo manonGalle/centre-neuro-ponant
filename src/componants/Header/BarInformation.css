@@ -5,16 +5,25 @@
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
+    font-weight: bold;
+    padding-top: 10px;
 }
 
 button {
     font-size: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
     border:none;
     border-radius: 10px;
     background-color: #5F5671;
     color: white;
+}
+
+button:hover {
+    background-color: #74F6F4;
+    color: #5F5671;
 }

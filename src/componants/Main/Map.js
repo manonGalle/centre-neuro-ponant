@@ -1,6 +1,3 @@
-import React from 'react'
-import './Map.css';
-
 import 'leaflet/dist/leaflet.css'
 import {MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
 import L from 'leaflet'
@@ -8,14 +5,8 @@ import MarkerClusterGroup from "react-leaflet-cluster";
 
 const Map = () => {
   return (
-    <div className='Map'>
-        <div className='Map-find'>
-            <h1>Nous trouver</h1>
-            <h2>Notre adresse : </h2>
-            <p>Centre neurologique du Ponant <br/>Polyclinique de Keraudren</p>
-        </div>
-        <div className='Map-map'>
-            <MapContainer
+    <div>
+        <MapContainer
                 className='full-height-map'
                 center={[48.429740, -4.474696]}
                 zoom={15}
@@ -28,8 +19,7 @@ const Map = () => {
                 />
 
             {/* TODO: Add markers */}
-            </MapContainer>
-        </div>
+        </MapContainer>
     </div>
   )
 }

@@ -15,7 +15,7 @@ const Main = () => {
         <h1>Centre Neurologique du Ponant</h1>
         <h2>à la clinique de Keraudren</h2>
         <button>
-          <Link to={'/map'}> 
+          <Link to={'/mapinformation'}> 
             <img className='Main-curseur' src={curseur} alt="curseur carte"/> Voir la carte
           </Link>
         </button>

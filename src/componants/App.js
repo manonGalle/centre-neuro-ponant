@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './Header/Header';
+import '../style/_reset.css';
 
 import { Route, Routes } from 'react-router-dom';
 import Main from './Main/Main';
@@ -9,7 +10,7 @@ import Diseases from './Diseases/Diseases';
 import Informations from './Informations/Informations';
 import Footer from './Footer/Footer';
 import NotFound from './NotFound/NotFound';
-import Map from './Main/Map';
+import MapInformation from './Main/MapInformation';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path='/team' element={<Team/>} />
         <Route path='/diseases' element={<Diseases/>} />
         <Route path='/informations' element={<Informations/>} />
-        <Route path='/map' element={<Map/>}></Route>
+        <Route path='/mapinformation' element={<MapInformation/>}></Route>
         <Route path="*" element={<NotFound /> } />
       </Routes>
       <Footer/>

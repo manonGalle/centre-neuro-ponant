@@ -26,6 +26,10 @@
   margin: 5px;
 }
 
+.header-logo h1 {
+  padding-top: 10px;
+}
+
 img{
   height: 60px;
   width: 60px;
