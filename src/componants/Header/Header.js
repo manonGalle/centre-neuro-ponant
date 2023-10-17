@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css';
 import logo from '../../assets/logos/logo_CNP.png';
 
 import { NavLink, Link } from "react-router-dom";
 import BarInformation from './BarInformation';
 
+
+
 const Header = () => {
+    const [showLinks, setShowLinks] = useState (false)
+
+    const handleShowLinks = () => {
+        setShowLinks(!showLinks)
+    }
+
   return (
     <>
-        <BarInformation/>
+        
         <div className="header">
             <div className='header-logo'>
                 <Link to={"/"}>
@@ -16,7 +24,8 @@ const Header = () => {
                 </Link>
                 <h1>Centre Neurologique <br/>du Ponant</h1>
             </div>
-            <div className='header-nav'>
+
+            <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"} `} >
                 <NavLink
                     to={"/center"}
                     className='link'
@@ -45,6 +54,11 @@ const Header = () => {
                 Informations pratiques
                 </NavLink>;
 
+            <button 
+                className='navbar_burger'
+                onClick={handleShowLinks}
+            ></button>
+                <span className='burger-bar'></span>
             </div>
         </div>
     </>
@@ -52,3 +66,5 @@ const Header = () => {
 }
 
 export default Header
+
+/*TUTO A REFAIRE POUR LE MENU BURGER RESPONSIVE : https://www.youtube.com/watch?v=hmoavRdx4YM */

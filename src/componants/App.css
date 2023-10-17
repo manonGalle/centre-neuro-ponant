@@ -26,3 +26,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*RESPONSIVE*/
+@media (min-width: 768px) {
+  body {
+      width: 85%;
+  }
+}
