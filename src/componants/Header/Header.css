@@ -1,12 +1,16 @@
-.header {
+.navbar {
     display: flex;
+    flex-wrap: wrap;
+    align-items:flex-end;
     justify-content: space-between;
-    color: white;
+    color: black;
     padding: 30px;
+    width: 100vw;
+    min-height: 75px;
   }
 
 
-.link, a {
+.navbar-link, a {
   text-decoration: none;
 }
 
@@ -15,19 +19,20 @@
   margin-left:10px;
 }
 
-.link {
+.navbar-link {
   padding-left: 10px;
 }
 
-.header-logo {
+
+.navbar-logo {
   display: flex;
   color: #5F5671;
-  font-size: 10px;
   margin: 5px;
 }
 
-.header-logo h1 {
+.navbar-logo h1 {
   padding-top: 10px;
+  font-size: 10px;
 }
 
 img{
@@ -45,20 +50,15 @@ img{
   background: transparent;
   border: none;
   color: inherit;
-  /*display: none;*/
+  display: none;
 }
 
 /*RESPONSIVE*/
-@media (min-width: 768px) {
-  body {
-      width: 85%;
-  }
-}
-
-
 
 @media screen and (max-width:768px){
-  .header-nav{
+
+  .navbar-links{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -69,21 +69,26 @@ img{
     padding: 2rem;
     visibility: hidden;
     background-color: #00AEA5;
+    color:white;
   }
 
-  .show-nav .header-nav{
+  .show-nav .navbar-links{
     right: 0;
     width: 100vw;
     visibility: visible;
   }
 
-  .link{
+  .navbar-link{
     display: block;
     padding: 1.5rem;
-    font-size: 5vw;
+    font-size: 3vw;
   }
+
   .navbar_burger {
     display: block;
+    position:fixed;
+    top:1rem;
+    right: 1rem;
   }
 
   .navbar_burger:hover {
@@ -105,6 +110,7 @@ img{
     transition: all .5s ease-in-out;
   }
 
+
   .burger-bar::before,
   .burger-bar::after{
     content:"";
@@ -119,6 +125,7 @@ img{
   .burger-bar::after{
     transform: translateY(12px);
   }
+
 
   .show-nav .burger-bar {
     background: transparent;

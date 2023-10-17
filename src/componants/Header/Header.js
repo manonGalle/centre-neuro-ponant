@@ -15,53 +15,54 @@ const Header = () => {
     }
 
   return (
-    <>
-        
-        <div className="header">
-            <div className='header-logo'>
+
+        <div className= {`navbar ${showLinks ? "show-nav" : "hide-nav" } `}>
+            <div className='navbar-logo'>
                 <Link to={"/"}>
                     <img src={logo} alt= "Logo Centre neurologique du Ponant"/>
                 </Link>
                 <h1>Centre Neurologique <br/>du Ponant</h1>
             </div>
 
-            <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"} `} >
+            <div className="navbar-links" >
                 <NavLink
                     to={"/center"}
-                    className='link'
+                    className='navbar-link'
                 >
                 Le centre
-                </NavLink>;
+                </NavLink>
 
                 <NavLink
                     to={"/team"}
-                    className='link'
+                    className='navbar-link'
                 >
                 L'équipe
-                </NavLink>;
+                </NavLink>
 
                 <NavLink
                     to={"/diseases"}
-                    className='link'
+                    className='navbar-link'
                 >
                 Votre pathologie
-                </NavLink>;
+                </NavLink>
 
                 <NavLink
                     to={"/informations"}
-                    className='link'
+                    className='navbar-link'
                 >
                 Informations pratiques
-                </NavLink>;
+                </NavLink>
 
             <button 
                 className='navbar_burger'
                 onClick={handleShowLinks}
-            ></button>
+            >
                 <span className='burger-bar'></span>
+            </button>
+            
+                
             </div>
         </div>
-    </>
   )
 }
 
