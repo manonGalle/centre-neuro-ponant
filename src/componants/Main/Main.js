@@ -22,7 +22,7 @@ const Main = () => {
       </div>
       <div className='Main-right'>
         <h1>Prenez rendez-vous dès aujourd'hui !</h1>
-        <button>Prendre rendez-vous</button>
+        <p>En contactant le <a href="02 98 55 55 55">02 98 55 55 55</a></p>
 
       </div>
     </div>

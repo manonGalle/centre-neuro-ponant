@@ -16,7 +16,9 @@ const Header = () => {
 
   return (
 
-        <div className= {`navbar ${showLinks ? "show-nav" : "hide-nav" } `}>
+    <>
+        <BarInformation/>
+        <div className="navbar">
             <div className='navbar-logo'>
                 <Link to={"/"}>
                     <img src={logo} alt= "Logo Centre neurologique du Ponant"/>
@@ -52,17 +54,11 @@ const Header = () => {
                 >
                 Informations pratiques
                 </NavLink>
-
-            <button 
-                className='navbar_burger'
-                onClick={handleShowLinks}
-            >
-                <span className='burger-bar'></span>
-            </button>
             
                 
             </div>
         </div>
+    </>
   )
 }
 

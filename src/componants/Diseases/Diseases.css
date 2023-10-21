@@ -1,0 +1,31 @@
+.Diseases {
+    padding: 10px;
+}
+
+.Diseases-introduction h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.Diseases-introduction p {
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.Diseases-informations {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.Diseases-informations h2 {
+    color: #00AEA5;
+    font-size: 15px;
+    padding-bottom: 7px;
+}
+
+.Diseases-informations p {
+    font-size: 11px;
+}

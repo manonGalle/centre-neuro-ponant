@@ -52,6 +52,12 @@
     color:white;
 }
 
+.Main-right p {
+    font-size: 12px;
+    margin-top: 10px;
+    color:white;
+}
+
 .Main-details img {
     width: 300px;
     height: 300px;

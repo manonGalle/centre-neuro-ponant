@@ -1,11 +1,10 @@
 .navbar {
     display: flex;
-    flex-wrap: wrap;
-    align-items:flex-end;
+    align-items:center;
     justify-content: space-between;
     color: black;
-    padding: 30px;
-    width: 100vw;
+    padding: 10px;
+    /*width: 100vw;*/
     min-height: 75px;
   }
 
@@ -55,89 +54,4 @@ img{
 
 /*RESPONSIVE*/
 
-@media screen and (max-width:768px){
-
-  .navbar-links{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    right: -100vw;
-    bottom: 0;
-    height: 100vh;
-    padding: 2rem;
-    visibility: hidden;
-    background-color: #00AEA5;
-    color:white;
-  }
-
-  .show-nav .navbar-links{
-    right: 0;
-    width: 100vw;
-    visibility: visible;
-  }
-
-  .navbar-link{
-    display: block;
-    padding: 1.5rem;
-    font-size: 3vw;
-  }
-
-  .navbar_burger {
-    display: block;
-    position:fixed;
-    top:1rem;
-    right: 1rem;
-  }
-
-  .navbar_burger:hover {
-    cursor:pointer;
-    position: fixed;
-    top:1rem;
-    right: 1rem;
-  }
-
-  .burger-bar,
-  .burger-bar::before,
-  .burger-bar::after{
-    display: block;
-    width: 40px;
-    height: 3px;
-    position:relative;
-    border-radius: 3px;
-    background: #5F5671;
-    transition: all .5s ease-in-out;
-  }
-
-
-  .burger-bar::before,
-  .burger-bar::after{
-    content:"";
-    position: absolute;
-    left: 0;
-  }
-
-  .burger-bar::before{
-    transform: translateY(-12px);
-  }
-
-  .burger-bar::after{
-    transform: translateY(12px);
-  }
-
-
-  .show-nav .burger-bar {
-    background: transparent;
-    width: 0;
-  }
-
-  .show-nav .burger-bar::before {
-    transform: rotate(45deg);
-  }
-
-  .show-nav .burger-bar::after {
-    transform: rotate(-45deg);
-  }
-
-}
+/*@media screen and (max-width:768px){*/

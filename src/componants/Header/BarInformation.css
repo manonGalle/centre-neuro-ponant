@@ -23,6 +23,10 @@ button {
     color: white;
 }
 
+.header-information button a {
+    color:white;
+}
+
 button:hover {
     background-color: #74F6F4;
     color: #5F5671;

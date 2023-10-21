@@ -1,0 +1,24 @@
+.Center {
+    padding: 10px;
+}
+
+.Center h1 {
+    margin-bottom: 15px;
+    color:#00AEA5;
+    font-weight: bold;
+}
+
+.Center-content {
+    display: flex;
+}
+
+.Center img {
+    width: 250px;;
+    height: 200px;
+}
+
+.Center p {
+    font-size: 11px;
+    line-height: 15px;
+    margin-right: 10px;
+}
