@@ -14,15 +14,16 @@ const Main = () => {
       <div className='Main-left'>
         <h1>Centre Neurologique du Ponant</h1>
         <h2>à la clinique de Keraudren</h2>
-        <button>
+        <button className='Main-map-button'>
           <Link to={'/mapinformation'}> 
-            <img className='Main-curseur' src={curseur} alt="curseur carte"/> Voir la carte
+            <img className='Main-curseur' src={curseur} alt="curseur carte"/> 
+            Voir la carte
           </Link>
         </button>
       </div>
       <div className='Main-right'>
         <h1>Prenez rendez-vous dès aujourd'hui !</h1>
-        <p>En contactant le <a href="02 98 55 55 55">02 98 55 55 55</a></p>
+        <p>En contactant le <span>02 98 55 55 55</span></p>
 
       </div>
     </div>

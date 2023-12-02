@@ -23,7 +23,6 @@ const Header = () => {
                 <Link to={"/"}>
                     <img src={logo} alt= "Logo Centre neurologique du Ponant"/>
                 </Link>
-                <h1>Centre Neurologique <br/>du Ponant</h1>
             </div>
 
             <div className="navbar-links" >

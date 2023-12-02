@@ -1,17 +1,43 @@
 .Main {
-    padding: 10px;
+    padding-top: 50px;
     display:flex;
     justify-content: center;
-    background-color: rgba(5, 167, 172, 0.2);
+    background-image: url("../../assets/images/hopital2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }
 
 .Main-left {
     width: 50%;
 }
 
+.Main-map-button {
+    font-size: 10px;
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.Main-map-button:hover {
+    color: white;
+    background-color: #00AEA5;
+
+}
+
+.Main-map-button:active {
+    color:white;
+}
+
 .Main h1 {
-    color: #5F5671;
+    color: #073D77;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .Main h2 {
@@ -24,38 +50,47 @@
     height: 15px;
 }
 
-.Main button {
-    font-size: 15px;
+.read-more {
+    font-size: 10px;
     background-color: transparent;
-    color: #5F5671;
-    padding: 5px;
-    padding-right: 10px;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
 }
 
-.Main button:hover {
-    font-size: 15px;
-    background-color: #5F5671;
+.read-more:hover {
     color: white;
-    border-radius: 10px;
+    background-color: #00AEA5;
+    font-weight: bold;
 }
 
 .Main-right {
     width: 200px;
     height: 200px;
     padding: 20px;
-    background: rgba(95, 86, 113, 0.5);
+    background: rgba(255,255,255, 0.5);
     margin-left: 10px;
+    color:#073D77;
+    font-weight: bold;
+}
+
+.Main-right span {
+    font-weight: bold;
 }
 
 .Main-right h1 {
     font-size: 20px;
-    color:white;
 }
 
 .Main-right p {
     font-size: 12px;
     margin-top: 10px;
-    color:white;
+}
+
+.Main-details {
+    width: 700px;
+    margin:0 auto;
+    padding-top: 50px;
 }
 
 .Main-details img {
@@ -72,13 +107,13 @@
 .Main-paragraphe h3 {
     color: #00AEA5;
     font-size: 10px;
-    padding-bottom: 7px;
+    padding-bottom: 10px;
 }
 
 .Main-paragraphe h1 {
     font-size: 25px;
     font-weight: bold;
-    padding-bottom: 7px;
+    padding-bottom: 10px;
 }
 
 .Main-paragraphe p{
@@ -90,15 +125,14 @@
 .Main-paragraphe button {
     padding: 5px;
     background-color: transparent;
-    border: 0.5px solid black;
-    color: #00AEA5;
-}
-
-.Main-paragraphe button :hover {
-    background-color:#00AEA5;
+    border: 0.5px solid #00AEA5;
     color: black;
 }
 
+.Main-paragraphe button:active{
+    color:initial;
+}
+
 .Main-details-left {
-    padding-right: 10px;
+    padding-right: 40px;
 }
