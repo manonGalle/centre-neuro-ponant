@@ -6,6 +6,7 @@
 }
 
 .Footer h3 {
+    padding-top: 20px ;
     font-weight: bold;
     padding-bottom: 10px;
 }
@@ -42,4 +43,12 @@
 
 .Footer-rdv a {
     color: white;
+}
+
+.Legal-mentions {
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }

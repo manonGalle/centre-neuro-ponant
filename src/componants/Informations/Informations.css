@@ -1,8 +1,11 @@
 .Informations {
-    width: 700px;
-    margin:0 auto;
+    width: 100vw;
     height: 100vh;
-    text-align: center;
+    background-color: rgba(40, 165, 174, 0.2);
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
 }
 
 .Informations span {
@@ -12,12 +15,64 @@
 
 .Informations h1 {
     font-size: 25px;
-    text-align: center;
     font-weight: bold;
     padding-bottom: 30px;
+    color: #073D77;
 }
 
 .Informations p {
-    font-size: 15px;
+    font-size: 13px;
     margin-bottom: 10px;
 }
+
+.Informations-left {
+    width: 50%;
+    padding-top: 50px;
+}
+
+.Informations-right {
+    width: 50%;
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.Informations-left span.violet {
+    border-radius: 20%;
+    background-color: #65378D;
+    color:white;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.Informations-left span.blue {
+    border-radius: 20%;
+    background-color: #567EBF;
+    color:white;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.Informations-left span.yellow {
+    border-radius: 20%;
+    background-color: #E8AF1A;
+    color:white;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.Informations-left span.pink {
+    border-radius: 20%;
+    background-color: #E43B61;
+    color:white;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.Informations-left span.grey {
+    border-radius: 20%;
+    background-color: #B7C6E6;
+    color:white;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+

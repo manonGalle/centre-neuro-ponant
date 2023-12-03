@@ -1,6 +1,11 @@
 .Diseases {
     width: 700px;
     margin:0 auto;
+    padding-top: 50px;
+}
+
+.Diseases-introduction {
+    padding-bottom: 50px;
 }
 
 .Diseases-introduction h1 {
@@ -8,6 +13,7 @@
     text-align: center;
     font-weight: bold;
     padding-bottom: 30px;
+    color: #073D77;
 }
 
 .Diseases-introduction p {
@@ -18,7 +24,7 @@
 
 .Diseases-informations {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .Diseases-informations h2 {
