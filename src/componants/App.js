@@ -11,21 +11,22 @@ import Informations from './Informations/Informations';
 import Footer from './Footer/Footer';
 import NotFound from './NotFound/NotFound';
 import MapInformation from './Main/MapInformation';
+import LegalMentions from './Footer/LegalMentions';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
       <Routes>
         <Route path="/" element={<Main/>} />
-        <Route path='/center' element={<Center/>} />
+        <Route path='/center' element={<Main/>} />
         <Route path='/team' element={<Team/>} />
         <Route path='/diseases' element={<Diseases/>} />
         <Route path='/informations' element={<Informations/>} />
         <Route path='/mapinformation' element={<MapInformation/>}></Route>
         <Route path="*" element={<NotFound /> } />
+        <Route path="/legalmentions" element={<LegalMentions/>}/>
       </Routes>
-      <Footer/>
+      
 
     </div>
   );

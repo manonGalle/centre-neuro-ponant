@@ -1,22 +1,11 @@
-.Team-neuro {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-    gap: 10px;
-    margin-bottom: 15px;
-}
-.doctor, .secretary {
-    padding: 10px;
-    text-align: center;
-}
-
-.Team-secretaire {
+.Team {
+    width: 700px;
+    margin:0 auto;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-}
-
-.Team h2 {
-    color: #00AEA5;
-    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 50px;
 }
 
 .Team h1 {
@@ -26,16 +15,14 @@
     padding-bottom: 30px;
 }
 
-.Team {
-    padding: 10px;
-}
-
 .Team p {
     font-size: 12px;
     text-align: center;
     padding-bottom: 30px;
 }
 
-.Team h3 {
-    font-size: 11px;;
+.Team img {
+    width: 600px;
+    height: 400px;
+    margin:0 auto;
 }

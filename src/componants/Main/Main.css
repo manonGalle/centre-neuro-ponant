@@ -1,22 +1,69 @@
+.Super-main {
+    background-image: url("../../assets/images/hopital2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
 .Main {
-    padding: 10px;
     display:flex;
     justify-content: center;
-    background-color: rgba(5, 167, 172, 0.2);
+    height: 100vh;
+    padding-top: 50px;
 }
 
 .Main-left {
     width: 50%;
 }
 
+.Main-map-button {
+    font-size: 10px;
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle; /* Aligne verticalement le contenu */
+    text-decoration: none;
+}
+
+.Main-map-button img,
+.Main-map-button p {
+  display: inline-block; /* Affiche l'image et le texte sur la même ligne */
+  vertical-align: middle; /* Aligne verticalement le contenu */
+  margin: 0; /* Supprime les marges par défaut */
+  /* Autres styles si nécessaire */
+}
+
+.Main-map-button p {
+    padding-left: 5px;
+    font-weight:600;
+  }
+  
+.Main-map-button:hover {
+    color: white;
+    background-color: #00AEA5;
+}
+
+.Main-map-button a:visited {
+  /* Styles pour les états visités, focus et actifs des liens à l'intérieur du bouton */
+  color: white;
+}
+
 .Main h1 {
-    color: #5F5671;
+    color: #073D77;
     font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px white;
 }
 
 .Main h2 {
     color: #00AEA5;
     font-size: 20px;
+    text-shadow: 1px 1px 1px white;
 }
 
 .Main-curseur {
@@ -24,61 +71,93 @@
     height: 15px;
 }
 
-.Main button {
-    font-size: 15px;
+.read-more {
+    font-size: 10px;
     background-color: transparent;
-    color: #5F5671;
-    padding: 5px;
-    padding-right: 10px;
+    color: #073D77;
+    border-radius: 10px;
 }
 
-.Main button:hover {
-    font-size: 15px;
-    background-color: #5F5671;
+.read-more a:visited {
+    /* Styles pour les états visités, focus et actifs des liens à l'intérieur du bouton */
+    color: #073D77;
+}
+
+.read-more:hover {
     color: white;
-    border-radius: 10px;
+    background-color: #00AEA5;
+    font-weight: bold;
 }
 
 .Main-right {
     width: 200px;
     height: 200px;
-    padding: 20px;
-    background: rgba(95, 86, 113, 0.5);
+    padding-left: 40px;
+    padding-right: 40px;
+    background: rgba(255,255,255, 0.8);
     margin-left: 10px;
+    color:#073D77;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main-right h3 {
+    font-size: 15px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border:none;
+    border-radius: 10px;
+    background-color: #00AEA5;
+    color: white;
+    margin-top: 20px;
 }
 
 .Main-right h1 {
     font-size: 20px;
-    color:white;
 }
 
 .Main-right p {
     font-size: 12px;
     margin-top: 10px;
-    color:white;
+}
+
+.Main-details {
+    width: 700px;
+    margin:0 auto;
+    padding-top: 10px;
+}
+
+.Main-details-right {
+    font-size: 10px;
 }
 
 .Main-details img {
     width: 300px;
     height: 300px;
-    padding-top: 40px;
 }
 
 .Main-paragraphe {
     display: flex;
-    margin: 20px;
+    margin-bottom: 50px;
 }
 
 .Main-paragraphe h3 {
     color: #00AEA5;
     font-size: 10px;
-    padding-bottom: 7px;
+    padding-bottom: 10px;
 }
 
 .Main-paragraphe h1 {
     font-size: 25px;
     font-weight: bold;
-    padding-bottom: 7px;
+    padding-bottom: 10px;
+    color:#073D77;
 }
 
 .Main-paragraphe p{
@@ -90,15 +169,14 @@
 .Main-paragraphe button {
     padding: 5px;
     background-color: transparent;
-    border: 0.5px solid black;
-    color: #00AEA5;
-}
-
-.Main-paragraphe button :hover {
-    background-color:#00AEA5;
+    border: 0.5px solid #00AEA5;
     color: black;
 }
 
+.Main-paragraphe button:active{
+    color:initial;
+}
+
 .Main-details-left {
-    padding-right: 10px;
+    padding-right: 40px;
 }

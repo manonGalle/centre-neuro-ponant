@@ -9,7 +9,7 @@ import MarkerClusterGroup from "react-leaflet-cluster";
 const Map = () => {
 
   const customIcon = L.icon({
-    iconUrl: '../../assets/logos/curseur-white.png',
+    iconUrl: curseur,
     iconSize: [32, 32],
     iconAnchor: [16, 32],
   });
