@@ -8,7 +8,7 @@ import BarInformation from './BarInformation';
 
 
 const Header = () => {
-    const [showLinks, setShowLinks] = useState (false)
+    const [showLinks, setShowLinks] = useState(false);
 
     const handleShowLinks = () => {
         setShowLinks(!showLinks)
@@ -17,8 +17,8 @@ const Header = () => {
   return (
 
     <>
-        <BarInformation/>
-        <div className="navbar">
+        {/*<BarInformation/>*/}
+        <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
             <div className='navbar-logo'>
                 <Link to={"/"}>
                     <img src={logo} alt= "Logo Centre neurologique du Ponant"/>
@@ -53,7 +53,14 @@ const Header = () => {
                 >
                 Informations pratiques
                 </NavLink>
-            
+                
+                <button 
+                    className='navbar_burger'
+                    onClick={handleShowLinks}
+                >
+                    <span className='burger-bar'></span>
+                
+                </button>
                 
             </div>
         </div>

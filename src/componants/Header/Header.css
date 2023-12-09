@@ -51,4 +51,80 @@ img{
 
 /*RESPONSIVE*/
 
-/*@media screen and (max-width:768px){*/
+/* Media query pour les écrans jusqu'à 768px de largeur */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: -100vw;
+    bottom: 0;
+    height: 100vh;
+    padding: 2rem;
+    background-color: black;
+  }
+
+  .show-nav .navbar-links {
+    width: 100vw;
+    right: 0;
+  }
+
+  .navbar-link {
+    display: block;
+    padding-bottom: 1rem;
+    font-size: 4vw;
+  }
+
+  .navbar_burger {
+    display: block;
+    position: fixed;
+    top:1rem;
+    right: 1rem;
+  }
+
+  .navbar_burger:hover {
+    cursor: pointer;
+  }
+
+  .burger-bar,
+  .burger-bar::before,
+  .burger-bar::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background: white;
+    transition: all .5s ease-in-out;
+  }
+
+  .burger-bar::before,
+  .burger-bar::after {
+    content:"";
+    position: absolute;
+    left: 0;
+  }
+
+  .burger-bar::before {
+    transform: translateY(-12px);
+  }
+
+  .burger-bar::after {
+    transform: translateY(12px);
+  }
+
+  .show-nav .burger-bar::before{
+    transform: rotate(45deg);
+  }
+
+  .show-nav .burger-bar::after{
+    transform: rotate(-45deg);
+  }
+
+  .show-nav .burger-bar {
+    background: transparent;
+  }
+
+}
