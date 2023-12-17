@@ -9,15 +9,20 @@ import BarInformation from './BarInformation';
 
 const Header = () => {
     const [showLinks, setShowLinks] = useState(false);
+    const [activeLink, setActiveLink] = useState('/center')
 
     const handleShowLinks = () => {
         setShowLinks(!showLinks)
     }
 
+    const handleLinkClick = (to) => {
+        setActiveLink(to)
+    }
+
   return (
 
     <>
-        {/*<BarInformation/>*/}
+        <BarInformation/>
         <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
             <div className='navbar-logo'>
                 <Link to={"/"}>
@@ -28,28 +33,40 @@ const Header = () => {
             <div className="navbar-links" >
                 <NavLink
                     to={"/center"}
-                    className='navbar-link'
+                    onClick={() => handleLinkClick('/center')}
+                    className={`navbar-link ${activeLink === '/center' ? 'active' : ''}`}
                 >
                 Le centre
                 </NavLink>
 
                 <NavLink
                     to={"/team"}
-                    className='navbar-link'
+                    onClick={() => handleLinkClick('/team')}
+                    className={`navbar-link ${activeLink === '/team' ? 'active' : ''}`}
                 >
                 L'équipe
                 </NavLink>
 
                 <NavLink
                     to={"/diseases"}
-                    className='navbar-link'
+                    className={`navbar-link ${activeLink === '/diseases' ? 'active' : ''}`}
+                    onClick={() => handleLinkClick('/diseases')}
                 >
-                Votre pathologie
+                Pathologies
+                </NavLink>
+
+                <NavLink
+                    to={"/exams"}
+                    className={`navbar-link ${activeLink === '/exams' ? 'active' : ''}`}
+                    onClick={() => handleLinkClick('/exams')}
+                >
+                Examens complémentaires
                 </NavLink>
 
                 <NavLink
                     to={"/informations"}
-                    className='navbar-link'
+                    onClick={() => handleLinkClick('/informations')}
+                    className={`navbar-link ${activeLink === '/informations' ? 'active' : ''}`}
                 >
                 Informations pratiques
                 </NavLink>
@@ -70,4 +87,4 @@ const Header = () => {
 
 export default Header
 
-/*TUTO A REFAIRE POUR LE MENU BURGER RESPONSIVE : https://www.youtube.com/watch?v=hmoavRdx4YM */
+/*TUTO A REFAIRE  a partir de 24:51 POUR LE MENU BURGER RESPONSIVE : https://www.youtube.com/watch?v=hmoavRdx4YM */

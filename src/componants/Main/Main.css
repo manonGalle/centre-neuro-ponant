@@ -1,5 +1,5 @@
 .Super-main {
-    background-image: url("../../assets/images/hopital2.jpg");
+    background-image: url("../../assets/images/pen.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -9,8 +9,8 @@
 .Main {
     display:flex;
     justify-content: center;
-    height: 100vh;
-    padding-top: 50px;
+    padding-top: 270px;
+    height: 900px;
 }
 
 .Main-left {
@@ -53,26 +53,31 @@
   color: white;
 }
 
-.Main h1 {
-    color: #073D77;
-    font-size: 30px;
+.Main-left h1 {
+    color: white;
+    font-size: 50px;
     font-weight: bold;
-    text-shadow: 1px 1px 3px white;
+}
+
+.Main-left p {
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .Main h2 {
     color: #00AEA5;
-    font-size: 20px;
+    font-weight: 900;
+    font-size: 30px;
     text-shadow: 1px 1px 1px white;
 }
 
 .Main-curseur {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
 }
 
 .read-more {
-    font-size: 10px;
+    font-size: 15px;
     background-color: transparent;
     color: #073D77;
     border-radius: 10px;
@@ -90,8 +95,8 @@
 }
 
 .Main-right {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     padding-left: 40px;
     padding-right: 40px;
     background: rgba(255,255,255, 0.8);
@@ -105,7 +110,7 @@
 }
 
 .Main-right h3 {
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
@@ -119,18 +124,17 @@
 }
 
 .Main-right h1 {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .Main-right p {
-    font-size: 12px;
+    font-size: 20px;
     margin-top: 10px;
 }
 
 .Main-details {
-    width: 700px;
+    width: 1300px;
     margin:0 auto;
-    padding-top: 10px;
 }
 
 .Main-details-right {
@@ -138,32 +142,33 @@
 }
 
 .Main-details img {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
 }
 
 .Main-paragraphe {
     display: flex;
-    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center; 
 }
 
 .Main-paragraphe h3 {
     color: #00AEA5;
-    font-size: 10px;
+    font-size: 15px;
     padding-bottom: 10px;
 }
 
 .Main-paragraphe h1 {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
     padding-bottom: 10px;
     color:#073D77;
 }
 
 .Main-paragraphe p{
-    font-size: 11px;
-    line-height: 15px;
-    padding-bottom: 7px;
+    font-size: 17px;
+    line-height: 30px;
+    padding-bottom: 20px;
 }
 
 .Main-paragraphe button {
@@ -179,4 +184,10 @@
 
 .Main-details-left {
     padding-right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .Main-details{
+        width: 80%;
+    }
 }

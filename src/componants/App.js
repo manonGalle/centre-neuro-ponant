@@ -12,6 +12,7 @@ import Footer from './Footer/Footer';
 import NotFound from './NotFound/NotFound';
 import MapInformation from './Main/MapInformation';
 import LegalMentions from './Footer/LegalMentions';
+import Exams from './Exams/Exams';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/center' element={<Main/>} />
         <Route path='/team' element={<Team/>} />
         <Route path='/diseases' element={<Diseases/>} />
+        <Route path='/exams' element={<Exams/>} />
         <Route path='/informations' element={<Informations/>} />
         <Route path='/mapinformation' element={<MapInformation/>}></Route>
         <Route path="*" element={<NotFound /> } />

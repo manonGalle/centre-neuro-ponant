@@ -4,7 +4,8 @@
     justify-content: space-between;
     color: black;
     padding: 10px;
-    padding-right: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
     /*width: 100vw;*/
     min-height: 75px;
   }
@@ -12,6 +13,7 @@
 
 .navbar-link, a {
   text-decoration: none;
+  font-size: 25px;
 }
 
 .navbar {
@@ -26,14 +28,9 @@
 }
 
 
-.navbar-logo h1 {
-  padding-top: 10px;
-  font-size: 10px;
-}
-
-img{
-  height: 60px;
-  width: 130px;
+img {
+  height: 110px;
+  width: 240px;
 }
 
 .active {
@@ -63,7 +60,7 @@ img{
     bottom: 0;
     height: 100vh;
     padding: 2rem;
-    background-color: black;
+    background-color: #073D77;
   }
 
   .show-nav .navbar-links {
@@ -96,7 +93,7 @@ img{
     height: 3px;
     position: relative;
     border-radius: 3px;
-    background: white;
+    background: #00AEA5;
     transition: all .5s ease-in-out;
   }
 
@@ -125,6 +122,7 @@ img{
 
   .show-nav .burger-bar {
     background: transparent;
+    width: 0;
   }
 
 }

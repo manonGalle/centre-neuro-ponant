@@ -6,15 +6,16 @@
 }
 
 .Footer h3 {
+    font-size: 22px;
     padding-top: 20px ;
     font-weight: bold;
     padding-bottom: 10px;
 }
 
 .Footer p {
-    font-size: 12px;
+    font-size: 20px;
     padding-bottom: 10px;
-    line-height: 15px;
+    line-height: 22px;
 }
 
 .Footer-left {
@@ -30,7 +31,7 @@
 }
 
 .Footer button {
-    font-size: 10px;
+    font-size: 17px;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -46,7 +47,7 @@
 }
 
 .Legal-mentions {
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
     color: gray;
     padding-top: 15px;

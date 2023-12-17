@@ -1,5 +1,5 @@
 .Diseases {
-    width: 700px;
+    width: 1200px;
     margin:0 auto;
     padding-top: 50px;
 }
@@ -9,7 +9,7 @@
 }
 
 .Diseases-introduction h1 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     font-weight: bold;
     padding-bottom: 30px;
@@ -17,9 +17,10 @@
 }
 
 .Diseases-introduction p {
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
     padding-bottom: 30px;
+    line-height: 30px;
 }
 
 .Diseases-informations {
@@ -29,10 +30,19 @@
 
 .Diseases-informations h2 {
     color: #00AEA5;
-    font-size: 15px;
+    font-size: 25px;
     padding-bottom: 7px;
+    font-weight: bold;
 }
 
 .Diseases-informations p {
-    font-size: 11px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Diseases {
+        width: 80%;
+    }
 }

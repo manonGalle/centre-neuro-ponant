@@ -17,7 +17,7 @@ const Footer = () => {
         <h3>Notre adresse</h3>
         <p>Centre Neurologique du Ponant <br/> Polyclinique de Keraudren <br/> 375 Rue Ernestine de Trémaudan, <br/> 29200 Brest</p>
         <h3>Téléphone :</h3>
-        <button className='Footer-rdv'>Prendre rendez-vous <br/>02 98 55 55 55</button>
+        <button className='Footer-rdv'>Prendre rendez-vous <br/>02 52 32 38 18</button>
         <h3>Horaires d'ouverture :</h3>
         <p>Du lundi au vendredi</p>
         <p>de 9h à 18h30</p>

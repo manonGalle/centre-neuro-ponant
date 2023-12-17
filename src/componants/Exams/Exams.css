@@ -1,0 +1,60 @@
+.Exams {
+    width: 1200px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 50px;
+}
+
+.Exams-paragraphe {
+    text-align: justify;
+    line-height: 30px;
+}
+
+.Exams h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+    color:#073D77 ;
+}
+
+.Exams h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00AEA5;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+
+.Exams h3 {
+    font-size: 20px;
+    text-decoration: underline;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+
+.Exams p {
+    font-size: 20px;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+
+.Exams img {
+    width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.Exams-type{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .Exams {
+        width: 80%;
+    }
+}
