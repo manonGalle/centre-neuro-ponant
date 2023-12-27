@@ -19,41 +19,61 @@ const Team = () => {
 
                 <p>L’équipe médicale est composée de 6 médecins neurologue :
 
+                <div className="Team-doctor">
                   <h2>Dr. Julia CHENOT, conventionnée secteur 1</h2>
                   <ul>
                       <li>Ancienne interne des hôpitaux de Brest</li>
                       <li>Ancienne praticien hospitalier des hôpitaux de Morlaix</li>
                     </ul>
+                  </div>
+
+                <div className="Team-doctor">
                   <h2>Dr. Sabine PRUD’HON, conventionnée secteur 2 avec OPTAM*</h2>
                   <ul>
                       <li>Ancienne interne des hôpitaux de Paris</li>
                       <li>Ancienne chef de clinique des universités – assistante hospitalière des hôpitaux de Paris</li>
                       <li>Ancienne praticienne hospitalière des hôpitaux de Brest</li>
                       </ul>
+                </div>
+
+                <div className="Team-doctor">
                   <h2>Dr. Victor QUERE, conventionné secteur 2 avec OPTAM*</h2>
                   <ul>
                       <li>Ancien interne des hôpitaux de Brest</li>
                       <li>Ancien assistant hospitalier des hôpitaux de Brest</li>
                   </ul>
+                </div>
+
+                <div className="Team-doctor">
                   <h2>Dr. Elise RETHO, conventionnée secteur 2 avec OPTAM*</h2>
                   <ul>
                       <li>Ancienne interne des hôpitaux de Brest</li>
                       <li>Ancienne assistante hospitalière des hôpitaux de Brest et Landerneau</li>
                   </ul>
+                </div>
+
+                <div className="Team-doctor">
                   <h2>Dr. Pierre-Yves ROUSSEAU, conventionné secteur 2 avec OPTAM*</h2>
                   <ul>
                       <li>Ancien interne des hôpitaux de Brest</li>
                       <li>Ancien chef de clinique des universités – assistant hospitalier des hôpitaux de Brest</li>
                   </ul>
+                </div>
+
+                <div className="Team-doctor">
                   <h2>Dr. Amélie TABORE, conventionnée secteur 2 avec OPTAM*</h2>
                   <ul>
                       <li>Ancienne interne des hôpitaux de Brest</li>
                       <li>Ancienne assistante hospitalière des hôpitaux de Brest et de Morlaix</li>
                   </ul>
+                </div>
 
-                <br/>*pas de dépassement d’honoraires en dehors des ponctions lombaires</p>
+                <br/><span className="optam">*pas de dépassement d’honoraires en dehors des ponctions lombaires</span></p>
 
-                <p>L’équipe de secrétariat est composée de <span>Mme Gwénaëlle CONTY</span> et <span>Mme Juliette GUILLOU</span>. Elles seront à votre écoute pour fixer les rendez-vous en présentiel ou par téléphone au 02.52.32.38.18. Elles vous accueilleront au centre de consultations et vous remettront les documents nécessaires à votre prise en charge au décours de la consultation médicale. Elles participent pleinement au bon déroulé de la prise en charge des patients.</p>
+              <hr></hr>
+              <div className="Team-secretary">
+                <p>L’équipe de secrétariat est composée de <span className="secretary">Mme Gwénaëlle CONTY</span> et <span className="secretary">Mme Juliette GUILLOU</span>. Elles seront à votre écoute pour fixer les rendez-vous en présentiel ou par téléphone au 02.52.32.38.18. Elles vous accueilleront au centre de consultations et vous remettront les documents nécessaires à votre prise en charge au décours de la consultation médicale. Elles participent pleinement au bon déroulé de la prise en charge des patients.</p>
+              </div>
 
             </div>
             

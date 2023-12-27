@@ -1,11 +1,13 @@
 .Informations {
     width: 100vw;
-    height: 100vh;
+    padding: 20px;
+    min-height: 100vh;
     background-color: rgba(40, 165, 174, 0.2);
+    box-sizing: border-box; /* Assure que les paddings sont inclus dans la largeur */
 }
 
 .Informations-content {
-    width: 1300px;
+    max-width: 100%; /* Largeur maximale pour s'adapter à la taille de la fenêtre */
     margin:0 auto;
     padding-top: 50px;
     align-items: center; 
@@ -83,3 +85,36 @@
     padding-right: 3px;
 }
 
+.hide-map {
+    display: none;
+}
+
+/* Ajout de styles pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .Informations-content {
+        width: 90%; /* Réduit la largeur du contenu */
+        flex-direction: column; /* Change la direction pour une disposition verticale */
+        align-items: flex-start; /* Aligne les éléments sur le côté */
+    }
+
+    .Informations-left,
+    .Informations-right {
+        width: 100%; /* Prend toute la largeur disponible */
+        padding-top: 20px; /* Ajuste l'espacement en haut */
+        text-align: left; /* Aligne le texte à gauche */
+        max-width: none; /* Supprime les limites de largeur maximale */
+        max-height: none; /* Supprime les limites de hauteur maximale */
+    }
+
+    .Informations-right {
+        padding-left: 0; /* Supprime le padding gauche */
+        padding-top: 20px; /* Ajoute un peu d'espacement en haut */
+    }
+
+    .Informations-left span,
+    .Informations-left h1,
+    .Informations p {
+        font-size: 16px; /* Réduit la taille du texte */
+        padding-bottom: 15px; /* Ajuste l'espacement en bas */
+    }
+}

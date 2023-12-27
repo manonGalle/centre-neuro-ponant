@@ -70,7 +70,7 @@ const Exams = () => {
                         <p>Une sensation de pression ou de brûlure peut être ressentie au point de ponction lors de l’insertion de l’aiguille, celle-ci est temporaire.</p>
                         <p>Des maux de têtes peuvent parfois survenir au décours du geste, pour lesquels des médicaments antalgiques peuvent vous être prescrits. Il vous sera également préconisé de bien vous hydrater après la ponction lombaire afin de les éviter. </p>
                         <p>Nous vous remercions également d’informer votre neurologue avant l’examen de tout traitement fluidifiant le sang, si vous souffrez d’une anomalie de la coagulation sanguine ou si vous avez subi une chirurgie lombaire.</p>
-                        <img src={pl} alt="pl"></img>
+                        <img className="lombaire" src={pl} alt="pl"></img>
 
                     <h3>Bilans biologiques</h3>
                         <p>diverses analyses biologiques pourront vous êtes prescrites dans le cadre du diagnostic ou du suivi des pathologies neurologiques.</p>

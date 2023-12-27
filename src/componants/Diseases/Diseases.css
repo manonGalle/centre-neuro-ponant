@@ -1,6 +1,7 @@
 .Diseases {
-    width: 1200px;
-    margin:0 auto;
+    width: 90%; /* Largeur pour les grands écrans */
+    max-width: 1200px; /* Limite la largeur pour éviter le débordement */
+    margin: 0 auto;
     padding-top: 50px;
 }
 

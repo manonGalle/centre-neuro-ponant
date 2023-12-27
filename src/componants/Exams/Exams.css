@@ -1,5 +1,6 @@
 .Exams {
-    width: 1200px;
+    width: 90%; /* Largeur pour les grands écrans */
+    max-width: 1200px; /* Limite la largeur pour éviter le débordement */
     margin:0 auto;
     display: flex;
     flex-direction: column;
@@ -43,6 +44,14 @@
 
 .Exams img {
     width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+img.lombaire {
+    width: 350px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;

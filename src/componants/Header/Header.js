@@ -2,22 +2,28 @@ import React, { useState } from 'react'
 import './Header.css';
 import logo from '../../assets/logos/logo_CNP.png';
 
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import BarInformation from './BarInformation';
 
 
 
-const Header = () => {
+const Header = ( { handleMapToggle } ) => {
     const [showLinks, setShowLinks] = useState(false);
-    const [activeLink, setActiveLink] = useState('/center')
+    /*const [activeLink, setActiveLink] = useState('/center')*/
+    const location = useLocation();
 
     const handleShowLinks = () => {
-        setShowLinks(!showLinks)
+        setShowLinks(!showLinks);
+        /*ajouter la logique SI nous sommes sur la page Informations*/
+        if(location.pathname === '/informations') {
+            handleMapToggle();
+        }
     }
 
-    const handleLinkClick = (to) => {
+    /*const handleLinkClick = (to) => {
         setActiveLink(to)
-    }
+    }*/
+
 
   return (
 
@@ -33,40 +39,45 @@ const Header = () => {
             <div className="navbar-links" >
                 <NavLink
                     to={"/center"}
-                    onClick={() => handleLinkClick('/center')}
-                    className={`navbar-link ${activeLink === '/center' ? 'active' : ''}`}
+                    className="navbar-link"
+                    /*onClick={() => handleLinkClick('/center')}
+                    className={`navbar-link ${activeLink === '/center' ? 'active' : ''}`}*/
                 >
                 Le centre
                 </NavLink>
 
                 <NavLink
                     to={"/team"}
-                    onClick={() => handleLinkClick('/team')}
-                    className={`navbar-link ${activeLink === '/team' ? 'active' : ''}`}
+                    className="navbar-link"
+                    /*onClick={() => handleLinkClick('/team')}
+                    className={`navbar-link ${activeLink === '/team' ? 'active' : ''}`}*/
                 >
                 L'équipe
                 </NavLink>
 
                 <NavLink
                     to={"/diseases"}
-                    className={`navbar-link ${activeLink === '/diseases' ? 'active' : ''}`}
-                    onClick={() => handleLinkClick('/diseases')}
+                    className="navbar-link"
+                    /*className={`navbar-link ${activeLink === '/diseases' ? 'active' : ''}`}
+                    onClick={() => handleLinkClick('/diseases')}*/
                 >
                 Pathologies
                 </NavLink>
 
                 <NavLink
                     to={"/exams"}
-                    className={`navbar-link ${activeLink === '/exams' ? 'active' : ''}`}
-                    onClick={() => handleLinkClick('/exams')}
+                    className="navbar-link"
+                    /*className={`navbar-link ${activeLink === '/exams' ? 'active' : ''}`}
+                    onClick={() => handleLinkClick('/exams')}*/
                 >
                 Examens complémentaires
                 </NavLink>
 
                 <NavLink
                     to={"/informations"}
-                    onClick={() => handleLinkClick('/informations')}
-                    className={`navbar-link ${activeLink === '/informations' ? 'active' : ''}`}
+                    className="navbar-link"
+                    /*onClick={() => handleLinkClick('/informations')}
+                    className={`navbar-link ${activeLink === '/informations' ? 'active' : ''}`}*/
                 >
                 Informations pratiques
                 </NavLink>
@@ -86,5 +97,3 @@ const Header = () => {
 }
 
 export default Header
-
-/*TUTO A REFAIRE  a partir de 24:51 POUR LE MENU BURGER RESPONSIVE : https://www.youtube.com/watch?v=hmoavRdx4YM */

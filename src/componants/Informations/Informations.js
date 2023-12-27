@@ -2,11 +2,19 @@ import Header from "../Header/Header"
 import "./Informations.css"
 import Map from '../Main/Map';
 import Footer from "../Footer/Footer";
+import React, { useState } from 'react'
 
 const Informations = () => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="Super-Informations">
-      <Header/>
+      <Header handleMapToggle={toggleMenu} />
       <div className="Informations">
         <div className="Informations-content">
           <div className="Informations-left">
@@ -20,11 +28,15 @@ const Informations = () => {
               <br/>29200 Brest
             </p>
             <p>
-              Pour venir en transport en commun : lignes de bus <span className="violet">4</span>, <span className="pink">66</span>, <span className="blue">23</span>, <span className="yellow">40</span>, <span className="grey">94</span>
+              Pour venir en transport en commun : lignes de bus <a href="https://www.bibus.fr/se-deplacer/lignes/ligne-bus-4"><span className="violet">4</span></a>, <a href="https://www.bibus.fr/se-deplacer/lignes/ligne-bus-66"><span className="pink">66</span></a>, <a href="https://www.bibus.fr/se-deplacer/lignes/ligne-bus-23"><span className="blue">23</span></a>, <a href="https://www.bibus.fr/se-deplacer/lignes/ligne-bus-40"><span className="yellow">40</span></a>, <a href="https://www.bibus.fr/se-deplacer/lignes/ligne-transport-la-demande-94"><span className="grey">94</span></a>
+            </p>
+            <p>
+              Pour venir en voiture :
+              <br/>Depuis la RN12 / D112 en direction de Brest, prendre la sortie 99 (dernière sortie avant Brest)
             </p>
           </div>
 
-          <div className="Informations-right">
+          <div className={`Informations-right ${isMenuOpen ? 'hide-map' : ''}`}>
             <Map/>
           </div>
         </div>

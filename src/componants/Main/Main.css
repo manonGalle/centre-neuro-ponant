@@ -9,8 +9,10 @@
 .Main {
     display:flex;
     justify-content: center;
-    padding-top: 270px;
-    height: 900px;
+    padding-top: 180px;
+    height: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .Main-left {
@@ -135,10 +137,25 @@
 .Main-details {
     width: 1300px;
     margin:0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .Main-details-right {
     font-size: 10px;
+}
+
+
+.Main-paragraphe .citation {
+    font-size: 10px;
+    font-style: italic;
+    text-align: end;
+}
+
+.Main-paragraphe a {
+    font-size: 10px;
+    font-style: italic;
+    text-align: end;
 }
 
 .Main-details img {
@@ -186,8 +203,72 @@
     padding-right: 40px;
 }
 
+
+/* Ajout de styles pour les petits écrans */
 @media screen and (max-width: 768px) {
-    .Main-details{
-        width: 80%;
+    .Super-main {
+        height: 100vh;
+    }
+
+    .Main {
+        flex-direction: column; /* Change la direction pour une disposition verticale */
+        align-items: center; /* Centre les éléments horizontalement */
+        padding-top: 150px; /* Ajuste l'espacement en haut */
+        height: auto; /* Ajuste la hauteur automatiquement */
+    }
+
+    .Main-left,
+    .Main-right {
+        width: 100%; /* Prend toute la largeur disponible */
+        padding: 20px; /* Ajoute un espacement intérieur */
+        text-align: center; /* Centre le texte */
+    }
+
+    .Main-left h1 {
+        font-size: 30px; /* Réduit la taille du titre */
+    }
+
+    .Main-left p {
+        font-size: 16px; /* Réduit la taille du paragraphe */
+    }
+
+    .Main-map-button {
+        font-size: 8px; /* Réduit la taille du bouton */
+        padding: 5px; /* Ajuste l'espacement */
+    }
+
+    .Main-right {
+        margin-top: 20px; /* Espacement supplémentaire en haut */
+        width: 80%; /* Ajuste la largeur */
+    }
+
+    .Main-details {
+        width: 90%; /* Ajuste la largeur */
+    }
+
+
+    .Main-details img {
+        width: 100%; /* Remplit la largeur disponible */
+        height: auto; /* Ajuste la hauteur automatiquement */
+    }
+
+    .Main-paragraphe h1 {
+        font-size: 25px; /* Réduit la taille du titre */
+    }
+
+    .Main-paragraphe p {
+        font-size: 14px; /* Réduit la taille du paragraphe */
+        line-height: 24px; /* Ajuste la hauteur de ligne */
+    }
+
+    .Main-paragraphe button {
+        font-size: 8px; /* Réduit la taille du bouton */
+        padding: 3px; /* Ajuste l'espacement */
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .Main-details {
+        width: auto;
     }
 }

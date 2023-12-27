@@ -4,16 +4,15 @@
     justify-content: space-between;
     color: black;
     padding: 10px;
-    padding-left: 10%;
+    padding-left: 5%;
     padding-right: 10%;
-    /*width: 100vw;*/
     min-height: 75px;
   }
 
 
 .navbar-link, a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .navbar {
@@ -48,8 +47,9 @@ img {
 
 /*RESPONSIVE*/
 
+
 /* Media query pour les écrans jusqu'à 768px de largeur */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1600px) {
   .navbar-links {
     display: flex;
     flex-direction: column;
@@ -77,7 +77,7 @@ img {
   .navbar_burger {
     display: block;
     position: fixed;
-    top:1rem;
+    top:4rem;
     right: 1rem;
   }
 

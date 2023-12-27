@@ -11,7 +11,9 @@ import MarkerClusterGroup from "react-leaflet-cluster";
 const Footer = () => {
   return (
     <div className='Footer-legals'>
+
     <div className='Footer'>
+
       <div className='Footer-left'>
         <img src={logo_black} alt="logo"/>
         <h3>Notre adresse</h3>
@@ -24,9 +26,13 @@ const Footer = () => {
       </div>
 
       <div className='Footer-right'>
+        <div className='Map-container'>
         <Map/> 
+        </div>
       </div>
+
       </div>
+
       <div className='Legal-mentions'>
         Tous droits réservés  ©2023 CENTRE NEUROLOGIQUE DU PONANT | Web développement : Manon Galle | <a href="/legalmentions">Mentions légales</a>
       </div>

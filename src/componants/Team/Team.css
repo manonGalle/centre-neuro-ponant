@@ -1,17 +1,18 @@
 .Team {
-    width: 1200px;
-    margin:0 auto;
+    width: 90%; /* Largeur pour les grands écrans */
+    max-width: 1200px; /* Limite la largeur pour éviter le débordement */
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     padding-top: 50px;
-    align-items: center; 
+    align-items: center;
     margin-bottom: 30px;
 }
 
 .Team-introduction {
     font-size: 20px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .Team h1 {
@@ -25,6 +26,14 @@
 .Team-paragraphe {
     text-align: justify;
     line-height: 30px;
+}
+
+.Team-doctor {
+    padding-top: 50px;
+}
+
+.Team-secretary {
+    padding-top: 50px;
 }
 
 
@@ -46,12 +55,36 @@
     margin:0 auto;
 }
 
-span {
+.secretary {
     font-weight: bold;
+}
+
+.optam {
+    font-style: italic;
 }
 
 @media screen and (max-width: 768px) {
     .Team {
-        width: 80%;
+        width: 90%; /* Réduire un peu plus la largeur pour les écrans plus petits */
+    }
+
+    .Team-introduction {
+        font-size: 16px; /* Ajuster la taille du texte pour les petits écrans */
+    }
+
+    .Team h1 {
+        font-size: 24px; /* Ajuster la taille du titre pour les petits écrans */
+        padding-bottom: 15px; /* Ajuster l'espacement */
+    }
+
+    .Team-paragraphe {
+        font-size: 14px; /* Ajuster la taille du texte pour les petits écrans */
+        line-height: 22px; /* Ajuster l'espacement des lignes */
+        padding-bottom: 15px; /* Ajuster l'espacement en bas */
+    }
+
+    .Team-paragraphe h2 {
+        margin-top: 15px; /* Ajuster l'espacement en haut pour les petits écrans */
+        font-size: 18px; /* Ajuster la taille du titre pour les petits écrans */
     }
 }
