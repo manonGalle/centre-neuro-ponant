@@ -3,15 +3,10 @@ import './Footer.css';
 import Map from '../Main/Map';
 
 import 'leaflet/dist/leaflet.css'
-import {MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
-import L from 'leaflet'
-import MarkerClusterGroup from "react-leaflet-cluster";
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 
 const Footer = () => {
-
-  //const dispatch = useDispatch();
   
   const isMenuOpen = useSelector((state) => state.isMenuOpen)
 

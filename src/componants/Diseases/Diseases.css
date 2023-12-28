@@ -18,10 +18,11 @@
 }
 
 .Diseases-introduction p {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     padding-bottom: 30px;
     line-height: 30px;
+    font-style: italic;
 }
 
 .Diseases-informations {

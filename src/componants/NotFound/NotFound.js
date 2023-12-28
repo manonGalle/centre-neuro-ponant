@@ -8,7 +8,7 @@ const NotFound = () => {
       <br/>Oups, il semblerait qu'il y a un problème...
       <br/>Nous mettons tout en oeuvre pour le résoudre le plus vite possible
       <br/> --------------
-      <br/>Pour prendre rendez-vous : <span>02 98 55 55 55</span>
+      <br/>Pour prendre rendez-vous : <span>02 52 32 38 18</span>
     </div> 
   )
 }

@@ -7,12 +7,15 @@
     padding-top: 50px;
     align-items: center;
     margin-bottom: 30px;
+    line-height: 30px;
 }
 
-.Team-introduction {
-    font-size: 20px;
+.Team-introduction p {
+    font-size: 18px;
     text-align: center;
     margin-bottom: 20px;
+    font-style: italic;
+    padding-bottom: 30px;
 }
 
 .Team h1 {
@@ -25,11 +28,15 @@
 
 .Team-paragraphe {
     text-align: justify;
-    line-height: 30px;
 }
 
 .Team-doctor {
     padding-top: 50px;
+}
+
+ul {
+    list-style-type: disc; /* Utilisation de puces rondes par défaut */
+    margin-left: 50px;
 }
 
 .Team-secretary {
@@ -65,7 +72,7 @@
 
 @media screen and (max-width: 880px) {
     .Team {
-        width: 90%; /* Réduire un peu plus la largeur pour les écrans plus petits */
+        width: 80%; /* Réduire un peu plus la largeur pour les écrans plus petits */
     }
 
     .Team-introduction {

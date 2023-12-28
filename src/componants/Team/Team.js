@@ -24,8 +24,8 @@ const Team = () => {
                   <ul>
                       <li>Ancienne interne des hôpitaux de Brest</li>
                       <li>Ancienne praticien hospitalier des hôpitaux de Morlaix</li>
-                    </ul>
-                  </div>
+                  </ul>
+                </div>
 
                 <div className="Team-doctor">
                   <h2>Dr. Sabine PRUD’HON, conventionnée secteur 2 avec OPTAM*</h2>

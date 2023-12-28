@@ -13,8 +13,10 @@ const Exams = () => {
     <div className="Super-exams">
       <Header/>
       <div className='Exams'>
+        <div className='Exams-introduction'>
           <h1>Examens complémentaires</h1>
           <p>Les examens complémentaires en neurologie jouent un rôle essentiel dans le diagnostic et le suivi des pathologies du système nerveux. Vous trouverez ci-dessous la plupart des examens prescrits en neurologie. </p>
+        </div>
             
             <div className="Exams-paragraphe">
 

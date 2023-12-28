@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import './Header.css';
 import logo from '../../assets/logos/logo_CNP.png';
 
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import BarInformation from './BarInformation';
-import { useDispatch, useSelector } from 'react-redux';
-import { actionMenuOpen } from '../../actions/actions';
+import { useDispatch } from 'react-redux';
+import { actionKeepMap, actionMenuOpen } from '../../actions/actions';
 
 
 
-const Header = ( { /*handleMapToggle*/ } ) => {
+const Header = () => {
     const [showLinks, setShowLinks] = useState(false);
 
     const dispatch = useDispatch()
@@ -17,13 +17,10 @@ const Header = ( { /*handleMapToggle*/ } ) => {
     const handleShowLinks = () => {
         setShowLinks(!showLinks);
         dispatch(actionMenuOpen());
-        /*if(location.pathname === '/informations') {
-            handleMapToggle();
-        }*/
     }
 
     const handleShowMap = () => {
-        dispatch(actionMenuOpen())
+        dispatch(actionKeepMap())
     }
 
 
@@ -33,7 +30,9 @@ const Header = ( { /*handleMapToggle*/ } ) => {
         <BarInformation/>
         <div className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
             <div className='navbar-logo'>
-                <Link to={"/"}>
+                <Link 
+                    to={"/"}
+                    onClick={handleShowMap}>
                     <img src={logo} alt= "Logo Centre neurologique du Ponant"/>
                 </Link>
             </div>

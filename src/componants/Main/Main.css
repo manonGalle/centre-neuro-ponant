@@ -287,5 +287,6 @@
 @media screen and (max-width: 1300px) {
     .Main-details {
         width: auto;
+        padding-top: 30px;
     }
 }

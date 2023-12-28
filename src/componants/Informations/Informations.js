@@ -2,27 +2,20 @@ import Header from "../Header/Header"
 import "./Informations.css"
 import Map from '../Main/Map';
 import Footer from "../Footer/Footer";
-import React, { useState } from 'react'
-import { useDispatch, useSelector } from "react-redux";
-import { actionMenuOpen } from "../../actions/actions";
+import React from 'react'
+import { useSelector } from "react-redux";
 
 const Informations = () => {
 
-  //const dispatch = useDispatch()
-
   const isMenuOpen = useSelector((state) => state.isMenuOpen)
-
-  /*const toggleMenu = () => {
-    dispatch(actionMenuOpen())
-  };*/
 
   return (
     <div className="Super-Informations">
-      <Header /*handleMapToggle={toggleMenu}*/ />
+      <Header/>
       <div className="Informations">
+      <h1>Informations pratiques</h1>
         <div className="Informations-content">
           <div className="Informations-left">
-            <h1>Informations pratiques</h1>
             <p>Le centre est ouvert du Lundi au Vendredi <span>de 9h à 18h30</span>.</p>
             <p>Vous pouvez prendre rendez-vous en nous contactant au <span>02 52 32 38 18</span>.</p>
             <p>Nous trouver :

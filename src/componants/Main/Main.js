@@ -1,5 +1,4 @@
 import './Main.css';
-import curseur from "../../assets/logos/curseur.png";
 import curseur_white from "../../assets/logos/curseur-white.png"
 import team from "../../assets/images/avengers.jpg";
 import diseases from "../../assets/images/neuro-diseases.jpg";
@@ -10,6 +9,9 @@ import Footer from '../Footer/Footer';
 
 const Main = () => {
 
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <>
@@ -42,7 +44,7 @@ const Main = () => {
             <h3>CENTRE NEUROLOGIQUE DU PONANT</h3>
             <h1>Notre équipe</h1>
             <p>Nous sommes 6 neurologues et 2 secrétaires. Chacun s'est spécialisé dans une pathologie afin de vous proposer une prise en charge médicale optimale. Nos parcours patient se basent sur une expérience en centre hospitalier et ont été étudié pour vous permettre de  réaliser l'ensemble de vos examens dans un même lieu et sur une même journée. Cela est possible grâce à l'accompagnement de professionnels médicaux et paramédicaux travaillant en partenariat avec le centre neurologique du Ponant.</p>
-            <button className='read-more'> 
+            <button className='read-more' onClick={handleScrollToTop}> 
               <Link to={'/team'}>
                 → Lire plus
               </Link>
@@ -67,7 +69,7 @@ const Main = () => {
             <h3>CENTRE NEUROLOGIQUE DU PONANT</h3>
               <h1>Pathologies</h1>
               <p>Nous prenons en charge l'ensemble des maladies neurologiques. Les plus fréquentes sont les accidents vasculaires cérébraux, les démences, les céphalées, les scléroses en plaque, Alzheimer, Parkison.</p>
-              <button className='read-more'> 
+              <button className='read-more' onClick={handleScrollToTop}> 
                 <Link to={'/diseases'}>
                   → Lire plus
                 </Link>
@@ -83,7 +85,7 @@ const Main = () => {
             <h3>CENTRE NEUROLOGIQUE DU PONANT</h3>
             <h1>Examens complémentaires</h1>
             <p>Nous sommes 6 neurologues et 2 secrétaires. Chacun s'est spécialisé dans une pathologie afin de vous proposer une prise en charge médicale optimale. Nos parcours patient se basent sur une expérience en centre hospitalier et ont été étudié pour vous permettre de  réaliser l'ensemble de vos examens dans un même lieu et sur une même journée. Cela est possible grâce à l'accompagnement de professionnels médicaux et paramédicaux travaillant en partenariat avec le centre neurologique du Ponant.</p>
-            <button className='read-more'> 
+            <button className='read-more' onClick={handleScrollToTop}> 
               <Link to={'/exams'}>
                 → Lire plus
               </Link>

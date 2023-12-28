@@ -64,6 +64,11 @@
     padding-bottom: 15px;
 }
 
+.Legal-mentions a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
 @media screen and (max-width: 880px) {
     .Footer h3,
     .Footer p {
