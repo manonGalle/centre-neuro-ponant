@@ -6,9 +6,15 @@ import 'leaflet/dist/leaflet.css'
 import {MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
 import L from 'leaflet'
 import MarkerClusterGroup from "react-leaflet-cluster";
+import { useDispatch, useSelector } from 'react-redux';
 
 
 const Footer = () => {
+
+  //const dispatch = useDispatch();
+  
+  const isMenuOpen = useSelector((state) => state.isMenuOpen)
+
   return (
     <div className='Footer-legals'>
 
@@ -26,7 +32,7 @@ const Footer = () => {
       </div>
 
       <div className='Footer-right'>
-        <div className='Map-container'>
+        <div className={`Map-container ${isMenuOpen ? 'hide-map' : ''}`}> 
         <Map/> 
         </div>
       </div>

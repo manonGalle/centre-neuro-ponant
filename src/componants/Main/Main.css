@@ -78,7 +78,7 @@
     height: 30px;
 }
 
-.read-more {
+.Main-paragraphe .read-more {
     font-size: 15px;
     background-color: transparent;
     color: #073D77;
@@ -152,7 +152,7 @@
     text-align: end;
 }
 
-.Main-paragraphe a {
+.Main-paragraphe .citation a {
     font-size: 10px;
     font-style: italic;
     text-align: end;
@@ -163,10 +163,16 @@
     height: 500px;
 }
 
+.Main-details-right .exams {
+    width: 500px;
+    height: 400px;
+}
+
 .Main-paragraphe {
     display: flex;
     justify-content: center;
     align-items: center; 
+    padding-bottom: 50px;
 }
 
 .Main-paragraphe h3 {
@@ -205,7 +211,7 @@
 
 
 /* Ajout de styles pour les petits écrans */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
     .Super-main {
         height: 100vh;
     }
@@ -213,7 +219,7 @@
     .Main {
         flex-direction: column; /* Change la direction pour une disposition verticale */
         align-items: center; /* Centre les éléments horizontalement */
-        padding-top: 150px; /* Ajuste l'espacement en haut */
+        padding-top: 120px; /* Ajuste l'espacement en haut */
         height: auto; /* Ajuste la hauteur automatiquement */
     }
 
@@ -242,13 +248,24 @@
         width: 80%; /* Ajuste la largeur */
     }
 
-    .Main-details {
-        width: 90%; /* Ajuste la largeur */
+    .Main-paragraphe {
+        display: flex;
+        flex-direction: column; /* Passer à une disposition verticale */
+        align-items: center; /* Centrer horizontalement les éléments */
+        text-align: center; /* Centrer le texte */
+        padding-bottom: 50px;
+    }
+
+    .Main-details-left,
+    .Main-details-right {
+      width: 100%; /* Prend la largeur complète */
+      text-align: center; /* Centre le texte horizontalement */
+      margin-bottom: 20px; /* Espace entre les éléments */
     }
 
 
     .Main-details img {
-        width: 100%; /* Remplit la largeur disponible */
+        width: 60%; /* Remplit la largeur disponible */
         height: auto; /* Ajuste la hauteur automatiquement */
     }
 

@@ -19,14 +19,14 @@
 }
 
 .Footer-left {
-    width: 50%;
+    width: 48%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .Footer-right{
-    width: 50%;
+    width: 48%;
     max-height: 400px;
     display: flex;
     flex-direction: column;
@@ -37,6 +37,7 @@
     width: 100%; /* Prend la largeur totale du conteneur parent */
     max-width: 100%; /* Pour assurer la largeur maximale de la carte */
     height: 100%; /* Ajuste la hauteur comme nécessaire */
+    padding-top: 60px;
 }
 
 .Footer button {
@@ -62,3 +63,15 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+@media screen and (max-width: 880px) {
+    .Footer h3,
+    .Footer p {
+      font-size: 18px; /* Réduire la taille du texte pour les écrans plus petits */
+    }
+  
+    .Footer-left,
+    .Footer-right {
+      max-width: 100%; /* Utilisation de la largeur complète sur les petits écrans */
+    }
+  }

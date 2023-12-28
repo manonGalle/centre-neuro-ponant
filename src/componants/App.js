@@ -5,7 +5,6 @@ import '../style/_reset.css';
 import { Route, Routes } from 'react-router-dom';
 import Main from './Main/Main';
 import Team from './Team/Team';
-import Center from './Center/Center';
 import Diseases from './Diseases/Diseases';
 import Informations from './Informations/Informations';
 import Footer from './Footer/Footer';
@@ -13,9 +12,13 @@ import NotFound from './NotFound/NotFound';
 import MapInformation from './Main/MapInformation';
 import LegalMentions from './Footer/LegalMentions';
 import Exams from './Exams/Exams';
+import { useState } from 'react';
 
 function App() {
+
+
   return (
+
     <div className="App">
       <Routes>
         <Route path="/" element={<Main/>} />
@@ -27,6 +30,7 @@ function App() {
         <Route path='/mapinformation' element={<MapInformation/>}></Route>
         <Route path="*" element={<NotFound /> } />
         <Route path="/legalmentions" element={<LegalMentions/>}/>
+        <Route path="/footer" element={<Footer/>}/>
       </Routes>
       
 

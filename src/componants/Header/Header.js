@@ -4,25 +4,27 @@ import logo from '../../assets/logos/logo_CNP.png';
 
 import { NavLink, Link, useLocation } from "react-router-dom";
 import BarInformation from './BarInformation';
+import { useDispatch, useSelector } from 'react-redux';
+import { actionMenuOpen } from '../../actions/actions';
 
 
 
-const Header = ( { handleMapToggle } ) => {
+const Header = ( { /*handleMapToggle*/ } ) => {
     const [showLinks, setShowLinks] = useState(false);
-    /*const [activeLink, setActiveLink] = useState('/center')*/
-    const location = useLocation();
+
+    const dispatch = useDispatch()
 
     const handleShowLinks = () => {
         setShowLinks(!showLinks);
-        /*ajouter la logique SI nous sommes sur la page Informations*/
-        if(location.pathname === '/informations') {
+        dispatch(actionMenuOpen());
+        /*if(location.pathname === '/informations') {
             handleMapToggle();
-        }
+        }*/
     }
 
-    /*const handleLinkClick = (to) => {
-        setActiveLink(to)
-    }*/
+    const handleShowMap = () => {
+        dispatch(actionMenuOpen())
+    }
 
 
   return (
@@ -38,10 +40,9 @@ const Header = ( { handleMapToggle } ) => {
 
             <div className="navbar-links" >
                 <NavLink
-                    to={"/center"}
+                    to={"/"}
                     className="navbar-link"
-                    /*onClick={() => handleLinkClick('/center')}
-                    className={`navbar-link ${activeLink === '/center' ? 'active' : ''}`}*/
+                    onClick={handleShowMap}
                 >
                 Le centre
                 </NavLink>
@@ -49,8 +50,7 @@ const Header = ( { handleMapToggle } ) => {
                 <NavLink
                     to={"/team"}
                     className="navbar-link"
-                    /*onClick={() => handleLinkClick('/team')}
-                    className={`navbar-link ${activeLink === '/team' ? 'active' : ''}`}*/
+                    onClick={handleShowMap}
                 >
                 L'équipe
                 </NavLink>
@@ -58,8 +58,7 @@ const Header = ( { handleMapToggle } ) => {
                 <NavLink
                     to={"/diseases"}
                     className="navbar-link"
-                    /*className={`navbar-link ${activeLink === '/diseases' ? 'active' : ''}`}
-                    onClick={() => handleLinkClick('/diseases')}*/
+                    onClick={handleShowMap}
                 >
                 Pathologies
                 </NavLink>
@@ -67,8 +66,7 @@ const Header = ( { handleMapToggle } ) => {
                 <NavLink
                     to={"/exams"}
                     className="navbar-link"
-                    /*className={`navbar-link ${activeLink === '/exams' ? 'active' : ''}`}
-                    onClick={() => handleLinkClick('/exams')}*/
+                    onClick={handleShowMap}
                 >
                 Examens complémentaires
                 </NavLink>
@@ -76,8 +74,7 @@ const Header = ( { handleMapToggle } ) => {
                 <NavLink
                     to={"/informations"}
                     className="navbar-link"
-                    /*onClick={() => handleLinkClick('/informations')}
-                    className={`navbar-link ${activeLink === '/informations' ? 'active' : ''}`}*/
+                    onClick={handleShowMap}
                 >
                 Informations pratiques
                 </NavLink>

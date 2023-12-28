@@ -28,6 +28,10 @@
   }
 }
 
+.hide-map {
+  display: none;
+}
+
 
 
 /*RESPONSIVE*/

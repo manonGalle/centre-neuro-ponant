@@ -76,6 +76,7 @@ const Main = () => {
 
         </div>
 
+
         <div className='Main-paragraphe'>
 
           <div className='Main-details-left'>
@@ -90,7 +91,7 @@ const Main = () => {
           </div>
 
           <div className='Main-details-right'>
-            <img src={exams} alt="exams"></img>
+            <img src={exams} alt="exams" className='exams'></img>
             <p  className='citation'><a href="https://fr.freepik.com/vecteurs-libre/medecin-au-presse-papiers-donnees-seringue-goutte-sang-sida-infection-par-virus-immunodeficience-concept-deficit-immunitaire-fond-blanc-illustration-isolee-bleu-corail-rose_11664334.htm#query=health%20exams&position=0&from_view=search&track=ais&uuid=90f1697f-a8c8-41d7-805a-2bad8004ffd3">Image de vectorjuice</a> sur Freepik</p>
           </div>
 

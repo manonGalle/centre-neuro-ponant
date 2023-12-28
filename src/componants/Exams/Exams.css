@@ -62,7 +62,7 @@ img.lombaire {
     margin-bottom: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
     .Exams {
         width: 80%;
     }

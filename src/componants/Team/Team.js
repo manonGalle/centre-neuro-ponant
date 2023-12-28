@@ -7,7 +7,7 @@ const Team = () => {
   return (
     <div className="Super-team">
       <Header/>
-      <div className='Team'>
+      <div className="Team">
 
       <h1>Notre équipe</h1>
 

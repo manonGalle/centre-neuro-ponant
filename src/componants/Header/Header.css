@@ -49,7 +49,7 @@ img {
 
 
 /* Media query pour les écrans jusqu'à 768px de largeur */
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1220px) {
   .navbar-links {
     display: flex;
     flex-direction: column;
@@ -123,6 +123,13 @@ img {
   .show-nav .burger-bar {
     background: transparent;
     width: 0;
+  }
+
+}
+
+@media screen and (max-width: 1500px) {
+  .navbar {
+    flex-wrap: wrap;
   }
 
 }

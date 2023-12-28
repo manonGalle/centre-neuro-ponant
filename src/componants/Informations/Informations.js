@@ -3,18 +3,22 @@ import "./Informations.css"
 import Map from '../Main/Map';
 import Footer from "../Footer/Footer";
 import React, { useState } from 'react'
+import { useDispatch, useSelector } from "react-redux";
+import { actionMenuOpen } from "../../actions/actions";
 
 const Informations = () => {
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  //const dispatch = useDispatch()
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const isMenuOpen = useSelector((state) => state.isMenuOpen)
+
+  /*const toggleMenu = () => {
+    dispatch(actionMenuOpen())
+  };*/
 
   return (
     <div className="Super-Informations">
-      <Header handleMapToggle={toggleMenu} />
+      <Header /*handleMapToggle={toggleMenu}*/ />
       <div className="Informations">
         <div className="Informations-content">
           <div className="Informations-left">

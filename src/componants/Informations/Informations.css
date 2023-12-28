@@ -19,6 +19,7 @@
 .Informations span {
     font-weight: bold;
     color:#00AEA5;
+    white-space: nowrap;
 }
 
 .Informations h1 {
@@ -90,7 +91,7 @@
 }
 
 /* Ajout de styles pour les petits écrans */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
     .Informations-content {
         width: 90%; /* Réduit la largeur du contenu */
         flex-direction: column; /* Change la direction pour une disposition verticale */

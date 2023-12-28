@@ -22,3 +22,7 @@
     background-color: #073D77;
     color: white;
 }
+
+span {
+    white-space: nowrap;
+}

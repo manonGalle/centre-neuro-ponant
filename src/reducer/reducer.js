@@ -1,7 +1,8 @@
-import { REVERSE_MODE } from "../actions/actions";
+import { REVERSE_MODE, MENU_OPEN } from "../actions/actions";
 
 const initialState = {
     darkMode: false,
+    isMenuOpen: false,
 }
 
 function reducer(state = initialState, action={}) {
@@ -11,6 +12,12 @@ function reducer(state = initialState, action={}) {
             return {
                 ...state,
                 darkMode: !state.darkMode,
+            }
+
+        case MENU_OPEN:
+            return {
+                ...state,
+                isMenuOpen: !state.isMenuOpen,
             }
 
         default:
