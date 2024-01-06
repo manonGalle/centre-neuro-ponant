@@ -37,7 +37,6 @@
   display: inline-block; /* Affiche l'image et le texte sur la même ligne */
   vertical-align: middle; /* Aligne verticalement le contenu */
   margin: 0; /* Supprime les marges par défaut */
-  /* Autres styles si nécessaire */
 }
 
 .Main-map-button p {
@@ -266,8 +265,8 @@
 
 
     .Main-details img {
-        width: 60%; /* Remplit la largeur disponible */
-        height: auto; /* Ajuste la hauteur automatiquement */
+        max-width: 80%; /* Remplit la largeur disponible */
+        height: auto; 
     }
 
     .Main-paragraphe h1 {

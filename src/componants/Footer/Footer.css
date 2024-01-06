@@ -78,6 +78,13 @@
   
     .Footer-left,
     .Footer-right {
-      max-width: 100%; /* Utilisation de la largeur complète sur les petits écrans */
+      width: 100%; /* Utilisation de la largeur complète sur les petits écrans */
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .Footer {
+        flex-direction: column; 
+        align-items: center;
     }
   }

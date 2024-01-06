@@ -17,7 +17,7 @@ const Team = () => {
 
             <div className="Team-paragraphe">
 
-                <p>L’équipe médicale est composée de 6 médecins neurologue :
+                <p>L’équipe médicale est composée de 6 médecins neurologue :</p>
 
                 <div className="Team-doctor">
                   <h2>Dr. Julia CHENOT, conventionnée secteur 1</h2>
@@ -68,7 +68,7 @@ const Team = () => {
                   </ul>
                 </div>
 
-                <br/><span className="optam">*pas de dépassement d’honoraires en dehors des ponctions lombaires</span></p>
+                <p className="optam">*pas de dépassement d’honoraires en dehors des ponctions lombaires</p>
 
               <hr></hr>
               <div className="Team-secretary">

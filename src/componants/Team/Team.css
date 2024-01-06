@@ -26,12 +26,10 @@
     color:#073D77 ;
 }
 
-.Team-paragraphe {
-    text-align: justify;
-}
 
 .Team-doctor {
     padding-top: 50px;
+    line-height: 30px;
 }
 
 ul {
@@ -67,6 +65,7 @@ ul {
 }
 
 .optam {
+    padding-top: 30px;
     font-style: italic;
 }
 
@@ -98,6 +97,7 @@ ul {
 
     .Team-paragraphe p {
         font-size: 15px;
+        word-wrap: break-word;
     }
 
     .Team img {
