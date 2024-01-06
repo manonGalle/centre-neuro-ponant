@@ -72,7 +72,7 @@ const Team = () => {
 
               <hr></hr>
               <div className="Team-secretary">
-                <p>L’équipe de secrétariat est composée de <span className="secretary">Mme Gwénaëlle CONTY</span> et <span className="secretary">Mme Juliette GUILLOU</span>. Elles seront à votre écoute pour fixer les rendez-vous en présentiel ou par téléphone au 02.52.32.38.18. Elles vous accueilleront au centre de consultations et vous remettront les documents nécessaires à votre prise en charge au décours de la consultation médicale. Elles participent pleinement au bon déroulé de la prise en charge des patients.</p>
+                <p>L’équipe de secrétariat sera à votre écoute pour fixer les rendez-vous en présentiel ou par téléphone au 02.52.32.38.18. Elles vous accueilleront au centre de consultations et vous remettront les documents nécessaires à votre prise en charge au décours de la consultation médicale. Elles participent pleinement au bon déroulé de la prise en charge des patients.</p>
               </div>
 
             </div>

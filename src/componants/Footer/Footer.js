@@ -23,7 +23,7 @@ const Footer = () => {
         <button className='Footer-rdv'>Prendre rendez-vous <br/>02 52 32 38 18</button>
         <h3>Horaires d'ouverture :</h3>
         <p>Du lundi au vendredi</p>
-        <p>de 9h à 18h30</p>
+        <p>9h-12h / 14h-17h</p>
       </div>
 
       <div className='Footer-right'>

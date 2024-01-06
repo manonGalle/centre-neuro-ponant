@@ -21,6 +21,10 @@
     border-radius: 10px;
     background-color: #073D77;
     color: white;
+    max-height: 55px;
+    max-width: 210px;
+    text-align: center;
+    margin-left: 10px;
 }
 
 span {

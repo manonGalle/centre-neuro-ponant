@@ -1,7 +1,7 @@
 .Informations {
     width: 100vw;
     padding: 20px;
-    min-height: 100vh;
+    min-height: 85vh;
     background-color: rgba(40, 165, 174, 0.2);
     box-sizing: border-box; /* Assure que les paddings sont inclus dans la largeur */
 }

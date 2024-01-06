@@ -37,7 +37,7 @@ const Exams = () => {
                         <p>Cet examen non invasif permet d’analyser l’activité électrique du cerveau à l’aide d’électrodes disposées sur le cuir chevelu. Principalement prescrit dans le cadre de l’épilepsie ou pour les bilans de malaise, cet examen est non douloureux, il est réalisé par une infirmière au cabinet et dure une vingtaine de minutes.
                         <br/>Le neurologue interprète les résultats dans un second temps et vous transmettra ses conclusions.</p>
                     <img src={eeg} alt="eeg"></img>
-                    </div>
+                    
 
 
                 <h2>Examens d’imagerie</h2>
@@ -82,7 +82,7 @@ const Exams = () => {
                         <p>Nous travaillons conjointement avec nos Confrères cardiologues, principalement dans le cadre du bilan d’AVC. Plusieurs examens pourront être réalisés par les cardiologues, tels que des échographies cardiaques, des électrocardiogrammes (ECG) ou des enregistrements cardiaques longue durée (Holter ECG).</p>
 
                 <p>En conclusion, les examens complémentaires en neurologie, couplés à un examen clinique rigoureux, jouent un rôle primordial dans le diagnostic et le suivi des affections du système nerveux. Si vous avez des interrogations concernant les différents examens qui ont pu vous être proposés, n’hésitez pas à en discuter avec votre neurologue.</p>
-
+                </div>
             </div>
       </div>
       <Footer/>

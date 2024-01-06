@@ -22,7 +22,8 @@ const Diseases = () => {
 
         <div className='Diseases-informations'>
           <h2>Sclérose en plaques (SEP)</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <p>Il s’agit d’une maladie inflammatoire, auto-immune, qui occasionne des lésions ciblées du système nerveux central (cerveau et moelle épinière). Les symptômes qui en découlent sont donc variables (déficit moteur et/ou sensitif, troubles de la coordination, troubles urinaires, etc…). Ils apparaissent généralement progressivement et ont tendance à régresser au moins partiellement en quelques jours ou semaines : on parle de poussée. Des séquelles peuvent néanmoins subsister entre les poussées. C’est une maladie plus fréquente chez l’adulte jeune, en particulier chez les femmes.</p>
+          <p>A noter qu’il existe une forme dite progressive où les symptômes évoluent continuellement, indépendamment des poussées qui peuvent se surajouter.</p>
         </div>
 
         <div className='Diseases-informations'>
@@ -38,16 +39,9 @@ const Diseases = () => {
           <p>Si l’adulte jeune peut parfois être atteint, il s’agit principalement d’une maladie touchant les patients de plus de 60 ans. L’âge est donc le facteur de risque principal. Dans une moindre mesure, l’exposition chronique aux pesticides est également un facteur de risque. Enfin, il y a également des formes génétiques.</p>
         </div>
 
-
-        <div className='Diseases-informations'>
-          <h2>Sclérose en plaque</h2>
-          <p>Elles correspondent à une atteinte des nerfs issus de la moelle épinière. Les symptômes fréquents sont une faiblesse motrice et/ou un engourdissement dans le territoire d’un nerf ou d’une racine nerveuse. Il peut y avoir fréquemment des douleurs associées dites « neuropathiques » comme des décharges électriques ou des sensations de brûlures. De nombreuses causes peuvent occasionner ce type d’atteinte allant de cause locorégionale avec l’exemple le plus connu du syndrome du canal carpien jusqu’au causes générales inflammatoires en passant par des causes infectieuses, métaboliques ou tumorales.</p>
-        </div>
-
-
         <div className='Diseases-informations'>
           <h2>Neuropathies périphériques</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <p>Elles correspondent à une atteinte des nerfs issus de la moelle épinière. Les symptômes fréquents sont une faiblesse motrice et/ou un engourdissement dans le territoire d’un nerf ou d’une racine nerveuse. Il peut y avoir fréquemment des douleurs associées dites « neuropathiques » comme des décharges électriques ou des sensations de brûlures. De nombreuses causes peuvent occasionner ce type d’atteinte allant de cause locorégionale avec l’exemple le plus connu du syndrome du canal carpien jusqu’au causes générales inflammatoires en passant par des causes infectieuses, métaboliques ou tumorales.</p>
         </div>
 
 

@@ -16,7 +16,7 @@ const Informations = () => {
       <h1>Informations pratiques</h1>
         <div className="Informations-content">
           <div className="Informations-left">
-            <p>Le centre est ouvert du Lundi au Vendredi <span>de 9h à 18h30</span>.</p>
+            <p>Le centre est ouvert du Lundi au Vendredi <span>de 9h à 12h et de 14h à 17h</span>.</p>
             <p>Vous pouvez prendre rendez-vous en nous contactant au <span>02 52 32 38 18</span>.</p>
             <p>Nous trouver :
               <br/>Centre Neurologique du Ponant 

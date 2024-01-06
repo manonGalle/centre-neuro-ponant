@@ -17,6 +17,7 @@
 .Exams-paragraphe {
     text-align: justify;
     line-height: 30px;
+    padding-bottom: 30px;
 }
 
 .Exams h1 {
@@ -48,13 +49,15 @@
     line-height: 30px;
 }
 
-.Exams img {
-    width: 600px;
-    height: 400px;
+.Exams-type img {
+    width: 80%; 
+    max-width: 100%; 
+    height: auto; 
+    margin: 10px 0; 
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-}
+  }
 
 img.lombaire {
     width: 350px;
@@ -66,10 +69,30 @@ img.lombaire {
 
 .Exams-type{
     margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 880px) {
     .Exams {
         width: 80%;
     }
+
+    .Exams-paragraphe p {
+        font-size: 15px;
+    }
+
+
+    .Exams-type img {
+        width: 90%; /* Ajustez la largeur des images selon votre mise en page */
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0; /* Ajustez les marges selon vos besoins */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
 }
+

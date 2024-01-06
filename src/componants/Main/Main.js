@@ -43,7 +43,7 @@ const Main = () => {
           <div className='Main-details-left'>
             <h3>CENTRE NEUROLOGIQUE DU PONANT</h3>
             <h1>Notre équipe</h1>
-            <p>Nous sommes 6 neurologues et 2 secrétaires. Chacun s'est spécialisé dans une pathologie afin de vous proposer une prise en charge médicale optimale. Nos parcours patient se basent sur une expérience en centre hospitalier et ont été étudié pour vous permettre de  réaliser l'ensemble de vos examens dans un même lieu et sur une même journée. Cela est possible grâce à l'accompagnement de professionnels médicaux et paramédicaux travaillant en partenariat avec le centre neurologique du Ponant.</p>
+            <p>L'équipe médicale est contituée de 6 neurologues aux profils complémentaires, chacun apportant une expérience précieuse issue de leurs parcours hospitaliers. Deux secrétaires assurent un accueil bienveillant et un soutien administratif efficace, garantissant une prise en charge fluide pour nos patients. </p>
             <button className='read-more' onClick={handleScrollToTop}> 
               <Link to={'/team'}>
                 → Lire plus
@@ -68,7 +68,7 @@ const Main = () => {
           <div className='Main-details-right'>
             <h3>CENTRE NEUROLOGIQUE DU PONANT</h3>
               <h1>Pathologies</h1>
-              <p>Nous prenons en charge l'ensemble des maladies neurologiques. Les plus fréquentes sont les accidents vasculaires cérébraux, les démences, les céphalées, les scléroses en plaque, Alzheimer, Parkison.</p>
+              <p>Nous prenons en charge l'ensemble des maladies neurologiques. Les plus fréquentes sont les accidents vasculaires cérébraux, la sclérose en plaques, les céphalées, les troubles cognitifs, la maladie de Parkison, les neuropathies périphériques et l'épilepsie.</p>
               <button className='read-more' onClick={handleScrollToTop}> 
                 <Link to={'/diseases'}>
                   → Lire plus
@@ -84,7 +84,7 @@ const Main = () => {
           <div className='Main-details-left'>
             <h3>CENTRE NEUROLOGIQUE DU PONANT</h3>
             <h1>Examens complémentaires</h1>
-            <p>Nous sommes 6 neurologues et 2 secrétaires. Chacun s'est spécialisé dans une pathologie afin de vous proposer une prise en charge médicale optimale. Nos parcours patient se basent sur une expérience en centre hospitalier et ont été étudié pour vous permettre de  réaliser l'ensemble de vos examens dans un même lieu et sur une même journée. Cela est possible grâce à l'accompagnement de professionnels médicaux et paramédicaux travaillant en partenariat avec le centre neurologique du Ponant.</p>
+            <p>Le Centre Neurologique du Ponant propose une gamme variée d'examens complémentaires. Ils comprennent des électroencéphalogrammes (EEG), des électroneuromyogrammes (ENMG) , des analyses du liquide céphalorachidien et des examens de neuro-imagerie. L'équipe utilise ces outils pour détecter et évaluer avec précision les affections du système nerveux afin de poser un diagnostic et initier des traitements adaptés.</p>
             <button className='read-more' onClick={handleScrollToTop}> 
               <Link to={'/exams'}>
                 → Lire plus

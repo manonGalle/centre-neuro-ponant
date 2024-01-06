@@ -47,4 +47,8 @@
     .Diseases {
         width: 80%;
     }
+
+    .Diseases-informations p {
+        font-size: 15px;
+    }
 }

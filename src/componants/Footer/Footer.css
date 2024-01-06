@@ -19,14 +19,15 @@
 }
 
 .Footer-left {
-    width: 48%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 10px;
 }
 
 .Footer-right{
-    width: 48%;
+    width: 50%;
     max-height: 400px;
     display: flex;
     flex-direction: column;

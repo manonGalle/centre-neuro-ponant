@@ -10,7 +10,7 @@
     display:flex;
     justify-content: center;
     padding-top: 180px;
-    height: 600px;
+    height: 70vh;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -219,7 +219,7 @@
     .Main {
         flex-direction: column; /* Change la direction pour une disposition verticale */
         align-items: center; /* Centre les éléments horizontalement */
-        padding-top: 120px; /* Ajuste l'espacement en haut */
+        padding-top: 70px; /* Ajuste l'espacement en haut */
         height: auto; /* Ajuste la hauteur automatiquement */
     }
 
@@ -246,6 +246,7 @@
     .Main-right {
         margin-top: 20px; /* Espacement supplémentaire en haut */
         width: 80%; /* Ajuste la largeur */
+        height: 25vh;
     }
 
     .Main-paragraphe {
